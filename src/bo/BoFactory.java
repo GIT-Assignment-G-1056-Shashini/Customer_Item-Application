@@ -1,6 +1,7 @@
 package bo;
 
 import bo.custom.impl.CustomerBOImpl;
+import bo.custom.impl.ItemBOImpl;
 
 public class BoFactory {
     private static BoFactory boFactory;
@@ -16,7 +17,7 @@ public class BoFactory {
     }
 
     public enum BoType {
-       CUSTOMER
+       CUSTOMER,ITEM
     }
 
     public <T> T getBo(BoType type) {
@@ -24,6 +25,9 @@ public class BoFactory {
 
             case CUSTOMER:
                 return (T) new CustomerBOImpl();
+
+            case ITEM:
+                return (T) new ItemBOImpl();
             default:
                 return null;
         }

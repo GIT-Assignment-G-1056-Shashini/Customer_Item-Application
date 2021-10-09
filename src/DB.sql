@@ -13,3 +13,11 @@ CREATE TABLE customer
     CONSTRAINT PRIMARY KEY (customerID)
 );
 
+CREATE TABLE item
+(
+    itemID   varchar(7)  not null,
+    itemName varchar(30) not null,
+    itemQty varchar(100) not null,
+    CONSTRAINT PRIMARY KEY (itemID)
+);
+

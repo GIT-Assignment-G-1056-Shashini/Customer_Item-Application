@@ -24,10 +24,10 @@ public class CustomerFormController {
         );
         try {
             if (customerBO.saveCustomer(customerDTO)) {
-new Alert(Alert.AlertType.CONFIRMATION,"Saved!").show();
+                new Alert(Alert.AlertType.CONFIRMATION, "Saved!").show();
 
-            }else{
-                new Alert(Alert.AlertType.ERROR,"Failed!").show();
+            } else {
+                new Alert(Alert.AlertType.ERROR, "Failed!").show();
 
             }
         } catch (Exception e) {
