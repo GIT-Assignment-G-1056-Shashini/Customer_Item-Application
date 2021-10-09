@@ -1,0 +1,19 @@
+.mainMenu{
+    -fx-background-color: #ec56fd;
+}
+.btn{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-size: 25px;
+    -fx-font-family: "Poppins Medium";
+}
+.lbl{
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+}
+.lblTitle{
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+}
