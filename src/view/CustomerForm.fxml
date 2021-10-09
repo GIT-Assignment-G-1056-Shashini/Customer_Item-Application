@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <AnchorPane layoutX="55.0" layoutY="73.0" prefHeight="673.0" prefWidth="1079.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="414.0" layoutY="46.0" styleClass="lbl" stylesheets="@styles.css" text="Customer Form" />
+            <TextField fx:id="txtCustomerId" layoutX="313.0" layoutY="166.0" prefHeight="36.0" prefWidth="541.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="85.0" layoutY="166.0" styleClass="lblTitle" stylesheets="@styles.css" text="Customer Id :" />
+            <TextField fx:id="txtCustomerName" layoutX="313.0" layoutY="225.0" prefHeight="36.0" prefWidth="541.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="85.0" layoutY="225.0" styleClass="lblTitle" stylesheets="@styles.css" text="Customer Name :" />
+            <TextField fx:id="txtCustomerAddress" layoutX="313.0" layoutY="285.0" prefHeight="36.0" prefWidth="541.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="85.0" layoutY="285.0" styleClass="lblTitle" stylesheets="@styles.css" text="Customer Address :" />
+            <TextField fx:id="txtCustomerMobile" layoutX="313.0" layoutY="349.0" prefHeight="36.0" prefWidth="541.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Label layoutX="85.0" layoutY="349.0" styleClass="lblTitle" stylesheets="@styles.css" text="Customer Mobile :" />
+            <JFXButton fx:id="btnSaveCustomer" buttonType="RAISED" layoutX="451.0" layoutY="427.0" onAction="#btnSaveCustomerOnAction" prefHeight="33.0" prefWidth="187.0" styleClass="btn" stylesheets="@styles.css" text="Save ">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#00ff1e" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
